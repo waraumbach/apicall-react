@@ -5,17 +5,6 @@ import "./App.css";
 
 import React from "react";
 
-function App() {
-  const fetchApiCall = async () => {
-    try {
-      const responseCall = await fetch(
-        "https://jsonplaceholder.typicode.com/photos"
-      );
-      const data = await responseCall.json();
-      console.log(data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-}
+function App() {}
+
 export default App;
