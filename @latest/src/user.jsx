@@ -17,11 +17,19 @@ const User = () => {
   };
   useEffect(() => {
     apiCall();
-    console.log(data);
-  });
+  }, []);
+  console.log(data);
 
-  return;
-  <></>;
+  return (
+    <>
+      {data && (
+        <>
+          <p>{data.title}</p>
+          <p>{data.thumbnailUrl}</p>
+        </>
+      )}
+    </>
+  );
 };
 
 export default User;
